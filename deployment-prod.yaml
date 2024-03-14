@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: cithit/taylorw8:latest                             #<----change this!
+        image: cithit/hendris3:latest                             #<----change this!
         ports:
         - containerPort: 80  # Expose NGINX on port 80      
 ---
@@ -41,7 +41,7 @@ metadata:
   name: prod-service
 spec:
   type: LoadBalancer 
-  loadBalancerIP: 10.48.10.225                                     # <-----change this!!!!
+  loadBalancerIP: 10.48.10.214                                     # <-----change this!!!!
   ports:
   - protocol: TCP
     port: 80
